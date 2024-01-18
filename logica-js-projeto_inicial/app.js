@@ -16,7 +16,6 @@ if(chute == numeroSecreto) {
     } else{
         alert(`número secreto é maior que ${chute}`);
     }
-};
     //tentativas = tentativas +1;
     tentativas++
 }
