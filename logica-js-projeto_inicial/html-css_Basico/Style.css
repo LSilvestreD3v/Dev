@@ -1,13 +1,13 @@
 body {
-    background-color: rgb(37, 37, 37);
-    color: azure;
+    background-color: rgb(139, 138, 138);
+    color: rgb(69, 71, 71);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin:2px;
+    padding: 2px;
 }
 
 header {
-    background-color: rgb(28, 65, 36);
+    background-color: rgb(69, 71, 71);
     color: azure;
     text-align: center;
     padding: 20px;
@@ -20,7 +20,7 @@ h1 {
 h1:first-line {
     font-size: 32px;
     font-weight: bold;
-    color: rgb(39, 85, 39);
+    color: rgb(20, 14, 14);
 }
 
 h1 strong {
@@ -37,7 +37,7 @@ ul {
 
 ul > li {
     margin-bottom: 10px;
-    background-color: #fff;
+    background-color: #500b0b;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -51,6 +51,18 @@ ul > li:nth-child(1) {
 ul > li:nth-child(2) {
     font-weight: bold;
     color: rgb(148, 148, 25);
+}
+ul > li:nth-child(3) {
+    font-weight: bold;
+    color: rgb(8, 170, 116);
+}
+ul > li:nth-child(4) {
+    font-weight: bold;
+    color: rgb(206, 7, 156);
+}
+ul > li:nth-child(5) {
+    font-weight: bold;
+    color: rgb(125, 4, 196);
 }
 img{
     margin: 20px;
