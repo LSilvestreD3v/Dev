@@ -1,0 +1,67 @@
+body {
+    background-color: rgb(37, 37, 37);
+    color: azure;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(28, 65, 36);
+    color: azure;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h1:first-line {
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(39, 85, 39);
+}
+
+h1 strong {
+    font-style: italic;
+    color: rgb(39, 85, 39);
+}
+
+ul {
+    font-weight: bold;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul > li {
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ul > li:nth-child(1) {
+    font-weight: bold;
+    color: #2208b8;
+}
+
+ul > li:nth-child(2) {
+    font-weight: bold;
+    color: rgb(148, 148, 25);
+}
+img{
+    margin: 20px;
+    height: 300px;
+}
+footer {
+    background-color: rgb(37, 37, 37);
+    color: azure;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
