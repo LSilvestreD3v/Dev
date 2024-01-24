@@ -47,16 +47,21 @@ img{
   align-items: center;
   gap: 32px;
 }
+.apresentação__links__subtitulo{
+  font-family: 'Krona One', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
 .apresentaçao__links__link {
-  background-color: rgb(25, 134, 4);
-  width: 280px;
+  border: 2px solid rgb(25, 134, 4);
+  width: 378px;
   text-align: center;
-  border-radius: 16px;
+  border-radius: 8px;
   font-size: 24px;
   font-weight: 600;
   padding: 21.5px 0;
   text-decoration: none;
-  color: #000000;
+  color: rgb(25, 134, 4);
   font-family: 'Montserrat', sans-serif;
   transition: background-color 0.3s ease; /* Adiciona uma transição suave para o efeito */
 }
@@ -64,3 +69,4 @@ img{
 .apresentaçao__links__link:active {
   background-color: #0e82a7; /* Cor diferente para indicar o estado de clique */
 }
+
