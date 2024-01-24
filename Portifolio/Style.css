@@ -27,14 +27,14 @@ body{
 }
 
 .eu{
-  height: 290px;
-  width: 250px;
+  height: 450px;
+  width: 350px;
 }
 .titulo-destaque{
   color: rgb(25, 134, 4);
 }
 .apresentaçao {
-  padding: 4% 15%;
+  padding: 5% 15%;
   /* margin: 10% ; */
   display: flex;
   align-items:center;
