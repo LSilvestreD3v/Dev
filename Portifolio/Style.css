@@ -2,7 +2,13 @@ body{
   background-color: #000000;
   color: #F6F6F6;
 }
-
+img{
+  width: 250px;
+}
 .titulo-destaque{
   color: rgb(25, 134, 4);
+}
+.apresentaçao {
+  display: flex;
+  align-items:center;
 }
