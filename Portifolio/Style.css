@@ -12,20 +12,24 @@ body{
   color: #F6F6F6;
 }
 img{
+  height: 290px;
   width: 250px;
 }
 .titulo-destaque{
   color: rgb(25, 134, 4);
 }
 .apresentaçao {
-  margin: 10%;
+  margin: 10% ;
   display: flex;
   align-items:center;
   justify-content: space-between;
-  margin: 10%;
+  margin: 10% 20%;
 }
 .apresentaçao__conteudo {
   width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 .apresentaçao__conteudo__titulo{
   font-size: 36px;
@@ -39,9 +43,12 @@ img{
 .apresentaçao__links{
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
 }
 .apresentaçao__links__link {
-  background-color: #22D4fd;
+  background-color: rgb(25, 134, 4);
   width: 280px;
   text-align: center;
   border-radius: 16px;
@@ -52,7 +59,6 @@ img{
   color: #000000;
   font-family: 'Montserrat', sans-serif;
   transition: background-color 0.3s ease; /* Adiciona uma transição suave para o efeito */
-
 }
 
 .apresentaçao__links__link:active {
