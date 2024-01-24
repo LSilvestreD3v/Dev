@@ -8,10 +8,25 @@
   padding: 0;
 }
 body{
+  box-sizing: border-box;
   background-color: #000000;
   color: #F6F6F6;
 }
-img{
+.cabeçalho{
+  padding: 2% 0% 0% 15%;
+}
+.cabeçalho__menu{
+  display: flex;
+  gap: 80px;
+}
+.cabeçalho__menu__link{
+  font-family: 'Montserra', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color:rgb(25, 134, 4);
+}
+
+.eu{
   height: 290px;
   width: 250px;
 }
@@ -19,11 +34,12 @@ img{
   color: rgb(25, 134, 4);
 }
 .apresentaçao {
-  margin: 10% ;
+  padding: 4% 15%;
+  /* margin: 10% ; */
   display: flex;
   align-items:center;
   justify-content: space-between;
-  margin: 10% 20%;
+  
 }
 .apresentaçao__conteudo {
   width: 600px;
@@ -69,8 +85,22 @@ img{
   font-family: 'Montserrat', sans-serif;
   transition: background-color 0.3s ease; /* Adiciona uma transição suave para o efeito */
 }
+.apresentaçao__links__link:hover{
+  background-color: rgb(112, 211, 92);
+}
+
 
 .apresentaçao__links__link:active {
   background-color: #0e82a7; /* Cor diferente para indicar o estado de clique */
+}
+
+.rodape{
+  padding: 20px;
+  color: darkolivegreen;
+  background-color: rgb(112, 211, 92);
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
 }
 
