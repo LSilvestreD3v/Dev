@@ -1,16 +1,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
 
-
-
+:root{
+  --cor-primaria: #000;
+  --cor-secundaria:#F6F6F6;
+  --cor-terciaria:rgb(25, 134, 4);
+}
 *{
   margin: 0;
   padding: 0;
 }
 body{
   box-sizing: border-box;
-  background-color: #000000;
-  color: #F6F6F6;
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
 }
 .cabeçalho{
   padding: 2% 0% 0% 15%;
@@ -23,16 +26,16 @@ body{
   font-family: 'Montserra', sans-serif;
   font-size: 24px;
   font-weight: 600;
-  color:rgb(25, 134, 4);
+  color:var(--cor-terciaria);
   text-decoration: none;
 }
 
 .eu{
-  height: 450px;
-  width: 350px;
+  height: 400px;
+  width: 300px;
 }
 .titulo-destaque{
-  color: rgb(25, 134, 4);
+  color: var(--cor-terciaria);
 }
 .apresentaçao {
   padding: 5% 15%;
@@ -74,7 +77,7 @@ body{
   display: flex;
   justify-content: center;
   gap: 16px;
-  border: 2px solid rgb(25, 134, 4);
+  border: 2px solid var(--cor-terciaria);
   width: 378px;
   text-align: center;
   border-radius: 8px;
@@ -82,12 +85,12 @@ body{
   font-weight: 600;
   padding: 21.5px 0;
   text-decoration: none;
-  color: rgb(25, 134, 4);
+  color: var(--cor-terciaria);
   font-family: 'Montserrat', sans-serif;
   transition: background-color 0.3s ease; /* Adiciona uma transição suave para o efeito */
 }
 .apresentaçao__links__link:hover{
-  background-color: rgb(112, 211, 92);
+  background-color: var(--cor-terciaria);
 }
 
 
