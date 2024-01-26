@@ -1,39 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8"> 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio</title>
-    <link rel="stylesheet" href="Css/Style.css">
+    <link rel="stylesheet" href="/Portifolio/Css/Style.css">
+    <title>Portfólio de Lucas</title>
 </head>
 <body>
-    <header class="cabeçalho">
-        <nav class="cabeçalho__menu">
-            <a class="cabeçalho__menu__link" href="index.html">Home</a>
-            <a class="cabeçalho__menu__link" href="about.html">Sobre mim</a>
-        </nav>
+
+    <nav class="navbar">
+        <div class="container">
+            <h1>Lucas</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home" class="parallax">
+        <div class="container">
+            <div class="profile-card">
+                <h2>Lucas</h2>
+                <p>Profissional multifacetado de Recife, Pernambuco</p>
+            </div>
+        </div>
     </header>
-    <main class="apresentaçao"> 
-        <section class="apresentaçao__conteudo">
-            <h1 class="apresentaçao__conteudo__titulo">Eleve seu negócio digital a outro nível <strong class="titulo-destaque">com um Front-end de qualidade!
-            </strong></h1>
-                <p class="aprensentaçao__conteudo__texto">Olá!me chamo Lucas, desenvolvedor
-                Front-end com base em <strong>React, HTML e
-                CSS</strong>. Ajudo pequenos negócios e designers a 
-                colocarem em prática boas ideias. Vamos 
-                conversar?</p>
-                <div class="apresentaçao__links">
-                    <h2 class="apresentação__links__subtitulo">Acesse minhas redes:</h2>
-                    <a class="apresentaçao__links__link" href="https://www.instagram.com/silvestre.prog/"><img src="instagram.png">Instagram</a>
-                <a class="apresentaçao__links__link"href="https://www.linkedin.com/in/lsilvestre-dev/"><img src="linkedin.png">linkedin</a>
-                <a class="apresentaçao__links__link"href="https://github.com/LSilvestreD3v"><img src="github.png"> Github</a>
-                </div>
-        </section>
-            <img class="eu" loading="lazy" src="icon1.png">
-    </main>
-    <footer class="rodape">
-        <p class="rodape__texto"> Desenvolvido por Carvalho.Code </p>
-    </footer>
+
+    <section id="projects" class="parallax">
+        <div class="container">
+            <h2>Projetos</h2>
+            <div class="project-carousel">
+                <!-- Aqui serão exibidos os projetos dinamicamente com JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Entre em contato via WhatsApp:</p>
+            <button onclick="openWhatsApp()">Enviar Mensagem</button>
+            <p>Conecte-se nas redes sociais:</p>
+            <div class="social-links">
+                <a href="https://linkedin.com/seu_perfil" target="_blank">LinkedIn</a>
+                <a href="https://twitter.com/seu_perfil" target="_blank">Twitter</a>
+                <!-- Adicione mais redes sociais conforme necessário -->
+            </div>
+            <div class="qr-code-card">
+                <h3>Meu QR Code</h3>
+                <div id="qrcode"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script src="Portifolio/Css/script.js"></script>
 </body>
 </html>

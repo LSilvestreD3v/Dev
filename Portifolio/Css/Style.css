@@ -1,114 +1,115 @@
+/* Estilos Gerais */
 
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
-
-:root{
-  --cor-primaria: #000;
-  --cor-secundaria:#F6F6F6;
-  --cor-terciaria:rgb(25, 134, 4);
-
-  --fonte-primaria:'Krona One', sans-serif;
-  --fonte-secundaria:'Montserrat', sans-serif;
-
-}
-*{
+body {
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-}
-body{
   box-sizing: border-box;
-  background-color: var(--cor-primaria);
-  color: var(--cor-secundaria);
 }
-.cabeçalho{
-  padding: 2% 0% 0% 15%;
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
-.cabeçalho__menu{
+
+/* Estilos Navbar */
+
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar h1 {
+  margin: 0;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
   display: flex;
-  gap: 80px;
 }
-.cabeçalho__menu__link{
-  font-family: var(--fonte-secundaria);
-  font-size: 24px;
-  font-weight: 600;
-  color:var(--cor-terciaria);
+
+.navbar li {
+  margin-right: 20px;
+}
+
+.navbar a {
   text-decoration: none;
-}
-.apresentaçao {
-  padding: 5% 15%;
-  display: flex;
-  align-items:center;
-  justify-content: space-between;
-  
+  color: white;
 }
 
-.eu{
-  height: 400px;
-  width: 300px;
-}
-.titulo-destaque{
-  color: var(--cor-terciaria);
-}
+/* Estilos Parallax */
 
-.apresentaçao__conteudo {
-  width: 600px;
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px; /* Ajuste conforme necessário */
+  color: white;
   display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-.apresentaçao__conteudo__titulo{
-  font-size: 36px;
-  font-family: var(--fonte-primaria);
-}
-
-.apresentacao__conteudo__texto {
-  font-size: 24px;
-  font-family: var(--fonte-secundaria);
-}
-.apresentaçao__links{
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
   align-items: center;
-  gap: 32px;
-}
-.apresentação__links__subtitulo{
-  font-family: var(--fonte-primaria);
-  font-weight: 400;
-  font-size: 24px;
-}
-
-.apresentaçao__links__link {
-  display: flex;
   justify-content: center;
-  gap: 16px;
-  border: 2px solid var(--cor-terciaria);
-  width: 378px;
+}
+
+header {
+  background-image: url('path/to/parallax-image1.jpg'); /* Substitua com o caminho da imagem desejada */
+}
+
+#projects {
+  background-image: url('path/to/parallax-image2.jpg'); /* Substitua com o caminho da imagem desejada */
+}
+
+/* Estilos Carrossel */
+
+.project-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.project-card {
+  flex: 0 0 300px;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+/* Estilos Contato e QR Code */
+
+#contact {
+  padding: 50px 0;
+}
+
+button {
+  background-color: #25D366;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #0077B5;
+}
+
+.qr-code-card {
+  margin-top: 20px;
   text-align: center;
-  border-radius: 8px;
-  font-size: 24px;
-  font-weight: 600;
-  padding: 21.5px 0;
-  text-decoration: none;
-  color: var(--cor-terciaria);
-  font-family: var(--fonte-secundaria);
-  transition: background-color 0.3s ease; /* Adiciona uma transição suave para o efeito */
-}
-.apresentaçao__links__link:hover{
-  background-color: var(--cor-terciaria);
 }
 
-
-.apresentaçao__links__link:active {
-  background-color: #0e82a7; /* Cor diferente para indicar o estado de clique */
+.qr-code-card h3 {
+  margin-bottom: 10px;
 }
 
-.rodape{
-  color: darkolivegreen;
-  background-color: var(--cor-terciaria);
-  padding: 24px;
-  text-align: center;
-  font-family: var(--fonte-secundaria);
-  font-size: 24px;
-  font-weight: 400;
+#qrcode {
+  width: 150px;
+  height: 150px;
 }
-
